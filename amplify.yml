@@ -8,10 +8,10 @@ frontend:
       commands:
         - export SANAY=sanay123
         - echo $ADDED_IN_SECRET_HOSTING
-        - echo "REACT_ADDED_THROUGH_BUILDSPEC=$SANAY" >> .env
-        - echo "REACT_ADDED_IN_SECRET_HOSTING=$ADDED_IN_SECRET_HOSTING" >> .env
+        - echo "REACT_APP_ADDED_THROUGH_BUILDSPEC=$SANAY" >> .env
+        - echo "REACT_APP_ADDED_IN_SECRET_HOSTING=$ADDED_IN_SECRET_HOSTING" >> .env
         - echo $secrets
-        - echo "REACT_TEST_SECRET=$secrets" >> .env
+        - echo "REACT_APP_TEST_SECRET=$secrets" >> .env
         - cat .env
         - printenv
         - npm run build
