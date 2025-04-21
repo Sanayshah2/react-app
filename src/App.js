@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log(process.env);
+  console.log(process.env.REACT_TEST_SECRET);
+  console.log(process.env.REACT_ADDED_THROUGH_BUILDSPEC);
   return (
     <div className="App">
       <header className="App-header">
