@@ -6,6 +6,7 @@ frontend:
         - npm install --cache .npm --prefer-offline
     build:
       commands:
+        - node --version
         - export SANAY=sanay123
         - echo $ADDED_IN_SECRET_HOSTING
         - echo "REACT_APP_ADDED_THROUGH_BUILDSPEC=$SANAY" >> .env
