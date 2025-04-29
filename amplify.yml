@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - NODE_ENV=development npx --yes npm i
     build:
       commands:
         - node --version
